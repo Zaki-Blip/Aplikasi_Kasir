@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('JQ`s Mart')
+            ->brandName('JQ`s mart')
             ->colors([
                 'primary' => Color::Amber,
             ])

@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Customer extends Model
+class Produk extends Model
 {
-    public function orders ():HasMany
-    {
-        return $this->hasMany(Order::class);
-    }
     protected $fillable = [
         'name',
-        'phone',
-        'address'
+        'price',
+        'stok'
     ];
+    public function orderdetail():HasMany{
+        return $this->hasMany()
+    }
 }
