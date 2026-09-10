@@ -283,8 +283,7 @@ $total=collect($items)->sum(fn($item)=>$item['subtotal'] ?? 0);
                 ExportAction::make()
                     ->exporter(OrderExporter::class)
                     ->label('Download Excel')
-                    ->icon('heroicon-o-document-arrow-down')
-                    ->color('success')
+                    ->icon('heroicon-o-document-')
             ]);
     }
 
